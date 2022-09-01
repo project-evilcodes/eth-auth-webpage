@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap');
+
+body {
+    background-color: #fff;
+}
+
+/*.body-div {*/
+/*    background-image: url('../img/background.png');*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    min-height: 100vh;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+.main {
+    top: 57px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    height: calc(100vh - 57px);
+    width: 100vw;
+    overflow: hidden;
+}
+
+.hero-eth-auth-logo {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.hero-brand span, .hero-brand h3 {
+    display: inline-block;
+}
+
+.hero-brand span {
+    margin-top: -20px;
+}
+
+.hero-brand h3 {
+
+}
+
+.open-source-badge, .github-badge {
+    font-size: 8px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3px 6px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.hero-lights {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.hero-light {
+    position: absolute;
+}
+
+.hero-light-1 {
+    left: -40vw;
+    top: 40vh;
+    width: 100vw;
+    height: 120vh;
+    background: radial-gradient(circle, rgba(173, 113, 255, 0.44) 0, transparent 50%, transparent 100%);
+}
+
+.hero-light-2 {
+    right: 27vw;
+    top: 5vh;
+    width: 50vw;
+    height: 60vh;
+    background: radial-gradient(circle, rgba(255, 242, 0, 0.44) 0, transparent 50%, transparent 100%);
+}
+
+.hero-light-3 {
+    right: -15vw;
+    top: 35vh;
+    width: 66vw;
+    height: 80vh;
+    background: radial-gradient(circle, rgba(161, 0, 255, 0.22) 0, transparent 50%, transparent 100%);
+}
+
+/*.hero-light-4 {*/
+/*    left: 40vw;*/
+/*    top: 40vh;*/
+/*    background: radial-gradient(circle, rgb(173, 113, 255) 0, transparent 50%, transparent 100%);*/
+/*}*/
+
+.hero-container {
+    /*border: 1px solid #000;*/
+    width: 80%;
+}
+
+.hero-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 3rem !important;
+}
+
+.hero-container h3 {
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem !important;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.link {
+    color: #4900a4;
+}
+
+.link:hover {
+    color: #9744ff;
+    text-decoration: none;
+}
+
+.twitter-badge {
+    margin-top: 24px;
+    font-size: 12px;
+}
+
+.npm-i {
+    font-weight: 600;
+    border: 1px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.yarn-add {
+    margin-left: 15px;
+    font-weight: 600;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+div {
+    max-width: 100%;
+}
+
+.blocks {
+    background-color: #5b5b5b;
+    color: #fff;
+    min-height: 100px;
+}
+
+.overview {
+    background-color: #484848;
+    color: #fff;
+    min-height: 100px;
+}
+
+.footer {
+    background-color: #3d3d3d;
+    color: #fff;
+    min-height: 100px;
+}
+
+.full-container {
+    width: 100%;
+    height: calc(100vh - 57px);
+}
+
+.con-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+}
+
+/* Navbar */
+.navbar {
+    position: fixed !important;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-brand {
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    transition-duration: 0.3s;
+}
+
+.nav-link:hover {
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+/* Admin card */
+.admin-card-container {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.admin-card {
+    padding: 20px 30px !important;
+    margin: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.29);
+}
+
+.admin-panel-main {
+    width: 100%;
+    padding: 80px 160px;
+
+}
+
+.alice-img {
+    height: 350px;
+}
+
+.alice-col {
+    max-width: 400px !important;
+}
+
+@media (min-width: 1600px) {
+    .alice-col {
+        max-width: 600px !important;
+    }
+}
+
+.alice-text {
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.admin-panel-heading {
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.admin-card p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.admin-card h2 {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 18px;
+}
+
+.admin-card-container .login-card {
+    background-color: rgba(255, 255, 255, .29);
+    backdrop-filter: blur(20px);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
