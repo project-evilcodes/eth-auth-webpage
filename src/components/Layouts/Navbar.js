@@ -12,8 +12,8 @@ export const Navbar = () => {
                     {/*<span className="navbar-toggler-icon"></span>*/}
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="none"
                          className="css-1170n61">
-                        <rect x="1" y="5" width="14" height="1.5" rx="1" fill="#737dff"></rect>
-                        <rect x="1" y="9" width="14" height="1.5" rx="1" fill="#737dff"></rect>
+                        <rect x="1" y="5" width="14" height="1.5" rx="1" fill="#3f0150"></rect>
+                        <rect x="1" y="9" width="14" height="1.5" rx="1" fill="#3f0150"></rect>
                     </svg>
                 </button>
                 <Link to="/" className="navbar-brand">
@@ -47,12 +47,7 @@ export const Navbar = () => {
                     <div className="nav-right navbar-nav ml-auto">
                         <li className="nav-item con-mid">
                             <a href={"#"} className="nav-link nav-sites-btn">
-                                npm
-                            </a>
-                        </li>
-                        <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link nav-sites-btn">
-                                yarn
+                                Fork on GitHub
                             </a>
                         </li>
                     </div>
