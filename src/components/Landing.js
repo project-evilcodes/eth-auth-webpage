@@ -38,7 +38,7 @@ export default function Landing() {
                 const address = await signer.getAddress();
 
                 // HTTP callback - GET
-                axios.get('http://localhost:4000/get/' + address).then(function (response) {
+                axios.get(Keys.API_URL + '/get/' + address).then(function (response) {
                     setData(response.data)
                     console.log(response.data);
                 });
