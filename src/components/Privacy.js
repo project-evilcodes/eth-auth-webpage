@@ -1,9 +1,13 @@
 import React from "react";
 import Footer from "./Layouts/Footer";
+import Helmet from "react-helmet";
 
 export default function Privacy() {
     return (
         <div>
+            <Helmet>
+                <title>Privacy Policy</title>
+            </Helmet>
             <div className={"main"}>
                 <div className={"legal-container container"}>
                     <h1>Privacy Policy for eth-auth</h1>

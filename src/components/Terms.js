@@ -1,9 +1,13 @@
 import React from "react";
 import Footer from "./Layouts/Footer";
+import Helmet from "react-helmet";
 
 export default function Terms() {
     return (
         <div>
+            <Helmet>
+                <title>Terms & Conditions</title>
+            </Helmet>
             <div className={"main"}>
                 <div className={"legal-container container"}>
                     <h2><strong>Terms and Conditions</strong></h2>

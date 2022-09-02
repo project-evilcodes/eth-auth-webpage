@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Footer from "./Layouts/Footer";
 import axios from "axios";
 import {ethers} from "ethers";
+import Helmet from "react-helmet";
 
 export default function Landing() {
 
@@ -135,6 +136,9 @@ export default function Landing() {
 
     return (
         <div>
+            <Helmet>
+                <title>Ethereum Authentication Tokens | eth-auth</title>
+            </Helmet>
             <div className={"hero-lights"}>
                 <div className={"hero-light hero-light-1"}></div>
                 <div className={"hero-light hero-light-2"}></div>
@@ -315,7 +319,7 @@ export default function Landing() {
                                             <span style={{color: "#000", fontSize: "16px"}}>Overview</span>
                                             <br/>
                                             <br/>
-                                            eth-auth is a secure package for passwordless authenticating users on
+                                            eth-auth is a secure package for password-less authenticating users on
                                             node.js
                                             decentralized
                                             applications (dApps) by signing a JWT token with the user's Ethereum private
