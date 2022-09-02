@@ -266,7 +266,7 @@ export default function Landing() {
                             <div className={"col secondary-card"}>
                                 <div className={"row"} style={{height: "100%"}}>
                                     <div className={"col con-mid block-icon"}>
-                                        <a href={"#"}>
+                                        <a href={"/"}>
                                         <span>
                                             <img src={"/img/gitbook.svg"} style={{width: "30px", height: "auto"}}
                                                  alt={"gitbook"}/>
@@ -274,7 +274,7 @@ export default function Landing() {
                                         </a>
                                     </div>
                                     <div className={"block-text-div col con-mid-vertical"}>
-                                        <a href={"#"} className={"link"}>
+                                        <a href={"/"} className={"link"}>
                                             <h5>Documentation</h5>
                                         </a>
                                         <span>

@@ -42,7 +42,7 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item con-mid">
-                            <a href={"#"} target={"_self"} className="nav-link">
+                            <a href={"/"} target={"_self"} className="nav-link">
                                 Documentation
                             </a>
                         </li>
