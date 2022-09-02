@@ -198,7 +198,8 @@ export default function Landing() {
                                             <div style={{width: "100%", height: "100%"}} className={"con-mid"}>
                                                 <button className={"metamask-btn"} onClick={connectWallet}>
                                                 <span>
-                                                    <img className={"metamask-logo"} src={"/img/metamask.svg"} alt={"metamask"}/>
+                                                    <img className={"metamask-logo"} src={"/img/metamask.svg"}
+                                                         alt={"metamask"}/>
                                                 </span>
                                                     <span className={"metamask-btn-txt"} style={{marginTop: "3px"}}>
                                                     Connect MetaMask
@@ -241,32 +242,43 @@ export default function Landing() {
                 <div className={"blocks con-mid"}>
                     <div className={"container"}>
                         <div className={"row"}>
+
                             <div className={"col secondary-card"}>
                                 <div className={"row"} style={{height: "100%"}}>
                                     <div className={"col con-mid block-icon"}>
+                                        <a href={"#"}>
                                         <span>
                                             <img src={"/img/gitbook.svg"} style={{width: "30px", height: "auto"}}
                                                  alt={"gitbook"}/>
                                         </span>
+                                        </a>
                                     </div>
                                     <div className={"block-text-div col con-mid-vertical"}>
-                                        <h5>Documentation</h5>
+                                        <a href={"#"} className={"link"}>
+                                            <h5>Documentation</h5>
+                                        </a>
                                         <span>
                                             Our GitBook contains all of the eth-auth documentation.
                                         </span>
                                     </div>
                                 </div>
                             </div>
+
                             <div className={"col secondary-card"}>
                                 <div className={"row"} style={{height: "100%"}}>
                                     <div className={"col con-mid block-icon"}>
+                                        <a href={"https://github.com/project-evilcodes/ethauth-server"}>
                                         <span>
                                             <img src={"/img/github.svg"} style={{width: "30px", height: "auto"}}
                                                  alt={"github"}/>
                                         </span>
+                                        </a>
                                     </div>
                                     <div className={"block-text-div col con-mid-vertical"}>
-                                        <h5>GitHub</h5>
+                                        <a href={"https://github.com/project-evilcodes/ethauth-server"}
+                                           className={"link"}>
+                                            <h5>GitHub</h5>
+                                        </a>
                                         <span>
                                             The source code is available on GitHub. Please create an issue if you run into one.
                                         </span>
@@ -276,13 +288,18 @@ export default function Landing() {
                             <div className={"col secondary-card"}>
                                 <div className={"row"} style={{height: "100%"}}>
                                     <div className={"col con-mid block-icon"}>
+                                        <a href={"https://stackoverflow.com/questions/tagged/eth-auth"}>
                                         <span>
                                             <img src={"/img/stackoverflow.svg"} style={{width: "30px", height: "auto"}}
                                                  alt={"stackoverflow"}/>
                                         </span>
+                                        </a>
                                     </div>
                                     <div className={"block-text-div col con-mid-vertical"}>
-                                        <h5>Stackoverflow</h5>
+                                        <a href={"https://stackoverflow.com/questions/tagged/eth-auth"}
+                                           className={"link"}>
+                                            <h5>Stackoverflow</h5>
+                                        </a>
                                         <span>
                                             There are Stackoverflow discussions if you need assistance.
                                         </span>
@@ -290,7 +307,7 @@ export default function Landing() {
                                 </div>
                             </div>
                         </div>
-                        <div className={"row"}>
+                        <div className={"row"} id={"overview"}>
                             <div className={"col secondary-card"}>
                                 <div className={"row"} style={{height: "100%"}}>
                                     <div className={"col overview-col con-mid-vertical"}>

@@ -3,6 +3,12 @@ import {Link} from "react-router-dom";
 
 
 export const Navbar = () => {
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light navbar-bg">
             <div className={"container"}>
@@ -16,29 +22,30 @@ export const Navbar = () => {
                         <rect x="1" y="9" width="14" height="1.5" rx="1" fill="#3f0150"></rect>
                     </svg>
                 </button>
-                <Link to="/" className="navbar-brand">
+                <Link to="/" onClick={topFunction} className="navbar-brand">
                     eth-auth
                 </Link>
 
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
+                            <a href={"#overview"} className="nav-link">
                                 Overview
                             </a>
                         </li>
                         <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
+                            <a href={"#"} target={"_self"} className="nav-link">
                                 Documentation
                             </a>
                         </li>
                         <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
+                            <a href={"https://github.com/project-evilcodes/ethauth-server"} target={"_self"} className="nav-link">
                                 GitHub
                             </a>
                         </li>
                         <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link">
+                            <a href={"https://stackoverflow.com/questions/tagged/eth-auth"} target={"_blank"}
+                               rel="noopener noreferrer" className="nav-link">
                                 Stackoverflow
                             </a>
                         </li>
@@ -46,7 +53,7 @@ export const Navbar = () => {
 
                     <div className="nav-right navbar-nav ml-auto">
                         <li className="nav-item con-mid">
-                            <a href={"#"} className="nav-link nav-sites-btn">
+                            <a href={"https://github.com/project-evilcodes/ethauth-server"} className="nav-link nav-sites-btn">
                                 Fork on GitHub
                             </a>
                         </li>

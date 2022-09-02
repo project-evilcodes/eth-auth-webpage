@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
     font-family: 'Ubuntu', sans-serif;
@@ -175,10 +179,12 @@ p, a, span, div {
 }
 
 .link {
+    transition-duration: 0.3s;
     color: #4900a4;
 }
 
 .link:hover {
+    transition-duration: 0.3s;
     color: #9744ff;
     text-decoration: none;
 }
@@ -534,6 +540,24 @@ div {
     justify-content: start;
     align-items: start;
     text-align: left;
+}
+
+.legal-container {
+    padding: 40px 0;
+}
+
+.legal-container p, .legal-container li {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.legal-container h1 {
+    font-size: 30px;
+}
+
+.legal-container h2, .legal-container h3 {
+    font-size: 24px;
+    text-align: justify;
 }
 
 /* Navbar */
