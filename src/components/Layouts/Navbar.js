@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
+import axios from "axios";
+import Keys from "../../config/Keys";
 
 
 export const Navbar = () => {
@@ -8,6 +10,12 @@ export const Navbar = () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+    useEffect(() => {
+        axios.get(Keys.API_URL + '/start').then(function (response) {
+            console.log(response.data);
+        });
+    }, []); // eslint-disable-line no-use-before-define
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light navbar-bg">

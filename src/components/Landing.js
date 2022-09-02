@@ -3,6 +3,8 @@ import Footer from "./Layouts/Footer";
 import axios from "axios";
 import {ethers} from "ethers";
 import Helmet from "react-helmet";
+import Keys from "../config/Keys";
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function Landing() {
 
@@ -68,7 +70,7 @@ export default function Landing() {
                 };
 
                 // HTTP callback - POST
-                await axios.post('http://localhost:4000/send', signatureData).then(async function (response) {
+                await axios.post(Keys.API_URL + '/send', signatureData).then(async function (response) {
                     console.log(response.data.authorized);
                     if (response.data.authorized === true) {
                         setAuthenticity(true);
@@ -116,10 +118,12 @@ export default function Landing() {
     }
 
     useEffect(() => {
-        fetchData().then(() => {
-            // console.log("Token fetched")
+        fetchData().then(() => {});
+        axios.get(Keys.API_URL + '/start').then(function (response) {
+            console.log(response.data);
+            document.getElementById("server-banner").style.display = "none";
         });
-    }, []);
+    }, []); // eslint-disable-line no-use-before-define
 
     useEffect(() => {
         if (data) {
@@ -139,6 +143,18 @@ export default function Landing() {
             <Helmet>
                 <title>Ethereum Authentication Tokens | eth-auth</title>
             </Helmet>
+            <div id={"server-banner"} className={"con-mid"}>
+                    <CircularProgress size="1rem" color={"inherit"} style={{marginBottom: "20px"}}/>
+                    <p style={{
+                        marginBottom: "0",
+                        fontFamily: "Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif"
+                    }}>The backend is loading at Heroku</p>
+                    <span style={{
+                        color: "#606060",
+                        fontSize: "10px",
+                        fontFamily: "Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif"
+                    }}>Ethereum Authentication Tokens | eth-auth</span>
+            </div>
             <div className={"hero-lights"}>
                 <div className={"hero-light hero-light-1"}></div>
                 <div className={"hero-light hero-light-2"}></div>
