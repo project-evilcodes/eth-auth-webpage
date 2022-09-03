@@ -329,7 +329,7 @@ export default function Landing() {
                         </div>
                         <div className={"row"} id={"overview"}>
                             <div className={"col secondary-card"}>
-                                <div className={"row"} style={{height: "100%"}}>
+                                <div className={"row overview-row"} style={{height: "100%"}}>
                                     <div className={"col overview-col con-mid-vertical"}>
                                         <p className={"overview-body overview-text"}>
                                             <span style={{color: "#000", fontSize: "16px"}}>Overview</span>
