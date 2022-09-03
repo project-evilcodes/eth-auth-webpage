@@ -274,7 +274,7 @@ export default function Landing() {
                                         </a>
                                     </div>
                                     <div className={"block-text-div col con-mid-vertical"}>
-                                        <a href={"/"} className={"link"}>
+                                        <a href={"https://sathnindu-kottage.gitbook.io/eth-auth/"} target={"_self"} className={"link"}>
                                             <h5>Documentation</h5>
                                         </a>
                                         <span>
