@@ -266,7 +266,7 @@ export default function Landing() {
                             <div className={"col secondary-card"}>
                                 <div className={"row"} style={{height: "100%"}}>
                                     <div className={"col con-mid block-icon"}>
-                                        <a href={"/"}>
+                                        <a href={"https://sathnindu-kottage.gitbook.io/eth-auth/"}>
                                         <span>
                                             <img src={"/img/gitbook.svg"} style={{width: "30px", height: "auto"}}
                                                  alt={"gitbook"}/>
