@@ -52,7 +52,7 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item con-mid">
-                            <a href={"https://stackoverflow.com/questions/tagged/eth-auth"} target={"_blank"}
+                            <a href={"https://stackoverflow.com/search?q=eth-auth"} target={"_blank"}
                                rel="noopener noreferrer" className="nav-link">
                                 Stackoverflow
                             </a>

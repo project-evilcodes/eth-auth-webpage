@@ -308,7 +308,7 @@ export default function Landing() {
                             <div className={"col secondary-card"}>
                                 <div className={"row"} style={{height: "100%"}}>
                                     <div className={"col con-mid block-icon"}>
-                                        <a href={"https://stackoverflow.com/questions/tagged/eth-auth"}>
+                                        <a href={"https://stackoverflow.com/search?q=eth-auth"}>
                                         <span>
                                             <img src={"/img/stackoverflow.svg"} style={{width: "30px", height: "auto"}}
                                                  alt={"stackoverflow"}/>
@@ -316,7 +316,7 @@ export default function Landing() {
                                         </a>
                                     </div>
                                     <div className={"block-text-div col con-mid-vertical"}>
-                                        <a href={"https://stackoverflow.com/questions/tagged/eth-auth"}
+                                        <a href={"https://stackoverflow.com/search?q=eth-auth"}
                                            className={"link"}>
                                             <h5>Stackoverflow</h5>
                                         </a>
