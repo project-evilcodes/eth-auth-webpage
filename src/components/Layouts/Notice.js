@@ -1,6 +1,5 @@
 import React from "react";
 import {Alert} from "@mui/material";
-import {Link} from "react-router-dom";
 
 export default function Notice() {
     return (
