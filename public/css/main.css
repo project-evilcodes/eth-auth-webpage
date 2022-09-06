@@ -657,3 +657,10 @@ div {
     border-radius: 10px;
     padding: 10px 20px;
 }
+
+.notice {
+    top: 57px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}

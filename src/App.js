@@ -5,10 +5,12 @@ import {Navbar} from "./components/Layouts/Navbar";
 import React from "react";
 import Privacy from "./components/Privacy";
 import Terms from "./components/Terms";
+import Notice from "./components/Layouts/Notice";
 
 function App() {
     return (
         <div>
+            <Notice/>
             <Navbar/>
             <Switch>
                 <Route exact path={"/"} component={Landing}/>
